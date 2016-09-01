@@ -1,4 +1,4 @@
-# ringo-docker
+# docker-ringo
 Development environment for ringo in a docker image. The docker image already
 includes the bare dependecies for ringo development.
 
