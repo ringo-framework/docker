@@ -1,11 +1,16 @@
 # ringo-docker
-Development environment for ringo in a docker image. The docker image already includes the bare dependecies for ringo development.
+Development environment for ringo in a docker image. The docker image already
+includes the bare dependecies for ringo development.
 
-Please note, that **this images does provide no database**. It is up to you to setup the required database and connection. See example below.
+The main idea of this image is to mount your ringo based application into the
+containers filesystem and run the application within the container.
+
+Please note, that **this images does provide no database**. It is up to you to
+setup the required database and connection. See example below.
 
 ## How to use
 First of all we need a running database. In this example we will use a
-PostgreSQL database::
+PostgreSQL database:
 
 	docker run --name ringo-postgres \
 		-e POSTGRES_USER=ringo \
@@ -14,7 +19,7 @@ PostgreSQL database::
 
 ### Update the development environment
 To update the development environment and to get the latest sources of Ringo,
-Formbar and Brabbel run the following command::
+Formbar and Brabbel run the following command:
 
 	docker run --name youridentifier \
 		-t \
@@ -25,7 +30,7 @@ Formbar and Brabbel run the following command::
 
 ### (Re)init the database
 To (Re)initialize the database for your application invoke the following
-command::
+command:
 
 	docker run --name youridentifier \
 		-t \
@@ -35,7 +40,7 @@ command::
 		toirl/ringo init <appname> [configfile]
 
 ### Run the application
-To start the application run::
+To start the application run:
 
 	docker run --name youridentifier \
 		-t \
