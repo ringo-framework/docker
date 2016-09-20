@@ -1,4 +1,8 @@
 # docker-ringo
+[![](https://images.microbadger.com/badges/version/toirl/ringo.svg)](https://microbadger.com/images/toirl/ringo "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/toirl/ringo.svg)](https://microbadger.com/images/toirl/ringo "Get your own image badge on microbadger.com")
+
+
 Development environment for ringo in a docker image. The docker image already
 includes the bare dependecies for ringo development.
 
