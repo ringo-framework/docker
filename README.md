@@ -61,14 +61,14 @@ your application.
 
 0. CD into the directory of the application you want to run. Make sure you
    have a docker.ini config file in it. Configured to the correct connection
-   string for your database. Look for a example in this repository.::
+   string for your database. Look for a example in this repository.:
 
 	cd /path/to/my/app
 
-1. Init the database::
+1. Init the database:
 
 	docker-ringo init $APPNAME
 
-2. Run the application
+2. Run the application:
 
 	docker-ringo start $APPNAME
